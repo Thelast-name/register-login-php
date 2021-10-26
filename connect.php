@@ -1,9 +1,9 @@
 <?php 
 
-    $host = 'localhost';
-    $user = 'root';
+    $host = '';
+    $user = '';
     $pass = '';
-    $dbname = 'project';
+    $dbname = '';
 
     $conn = mysqli_connect($host, $user, $pass, $dbname) or die("<h2>No conncet</h2>")
 
