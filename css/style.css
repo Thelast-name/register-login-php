@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.c {
+    position:absolute;
+    right: 80px;
+    top: 25px;
+}
+
+.format {
+    width: 20%;
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 30px;
+}
+
+.format button {
+    margin-top: 5em;
+}
+.format input {
+    margin-top: 25px;
+}
+
+.loin {
+    margin-right: 80px;
+}
