@@ -2,16 +2,15 @@
 
     session_start();
 
-    session_start();
     if (!isset($_SESSION['username'])) {
         $_SESSION['msg'] = "You must log in first";
-        header('location: hom.php');
+        header('location: home.php');
     }
-    
+
     if (isset($_GET['logout'])) {
         session_destroy();
         unset($_SESSION['username']);
-        header('location: hom.php');
+        header('location: home.php');
     }
 
 ?>
@@ -40,7 +39,7 @@
                     <a href="#" class="fs-4 align-items-right c loin">
                         <?php if (isset($_SESSION['username'])) : ?>
                         <p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
-                        <p><a href="hom.php?logout='1'" style="color: red;" class="fs-4 align-items-right c">Logout</p>
+                        <p><a href="home.php?logout='1'" style="color: red;" class="fs-4 align-items-right c">Logout</p>
                     <?php endif ?>
                     </a>
                 </nav>
